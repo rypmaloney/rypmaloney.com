@@ -25,21 +25,13 @@ body {
 
 /* header background image */
 .header {
-    background-image: url('images/kpo.jpeg');
+    background-image: url('images/hullsky.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-/*graying out bacground image */
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
+
 
 .description {
     left: 50%;
@@ -49,7 +41,7 @@ body {
     text-align: center;
 }
 .description h1 {
-    color: #465e72;
+    color: #ebe5c8;
 }
 .description p {
     color: #fff;
@@ -77,19 +69,43 @@ body {
     margin-bottom: 16px;
 }
 
+/*footer*/
+.page-footer {
+    background-color: #465e72;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
 
-/* contact */
-.features .form-control,
-.features input {
-    border-radius: 0;
+
+
+/* contact */ 
+
 }
-.features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
-    color: #fff;
-    margin-top: 20px;
-}
-.features .btn:hover {
-    background-color: #333;
-    border: 1px solid #333;
+/* Media queries for mobile */
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+ 
+    .description h1 {
+        font-size: 2em;
+    }
+ 
+    .description p {
+        font-size: 1.2rem;
+    }
+ 
+    .features {
+        margin: 0;
+    }
 }

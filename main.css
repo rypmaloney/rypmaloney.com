@@ -2,22 +2,36 @@ body {
     padding: 0;
     margin: 0;
     background: #f2f6e9;
+    
 }
 .navbar {
     background: #465e72;
+    padding-bottom: .5em;
 
 }
+.navbar-brand:hover {
+    color:#255584
+    
+}
+
 .nav-link,
 .navbar-brand {
     color: #fff;
     cursor: pointer;
     margin-left: 1em;
+    text-shadow: 1px 1px 1px #000;
 }
 .nav-link {
     margin-right: 1em !important;
+    font-family: 'Poppins', sans-serif;
+    
 }
 .nav-link:hover {
     color: #000;
+}
+
+.active a {
+    color: #abc9e6;
 }
 .navbar-collapse {
     justify-content: flex-end;
@@ -29,9 +43,18 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-bottom: 1em;
 }
 
+.sub-header {
+    background-image: url('images/hullsky.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 10em;
+    margin-bottom: 1em;
 
+}
 
 .description {
     left: 50%;
@@ -39,15 +62,36 @@ body {
     top: 45%;
     transform: translate(-50%, -55%);
     text-align: center;
+
 }
 .description h1 {
+    font-family: 'Poppins', sans-serif;
     color: #ebe5c8;
+    text-shadow: 1px 1px 1px #000;
 }
 .description p {
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 1.3rem;
     line-height: 1.5;
+    text-shadow: 1px 1px 1px #000;
 }
+.description button {
+    border:1px solid #465e72;
+    background:#ebe5c8;
+    border-radius: 0;
+    color:#465e72;
+    box-shadow: 1px 1px 5px #000;
+}
+.description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
+    
+}
+
+
+
 
 /* column styles */ 
 .features {
@@ -69,11 +113,39 @@ body {
     margin-bottom: 16px;
 }
 
+
+.card {
+    margin-top: 2em;
+    
+}
+.card h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.list {
+   width: 80%;
+    align-content: center;
+}
+
+.list-card{
+     box-shadow: 1px 1px 10px #000;
+    
+}
+
+
+
+
 /*footer*/
 .page-footer {
     background-color: #465e72;
     color: #ccc;
-    padding: 60px 0 30px;
+    padding: 30px 0 10px;
+    margin-top: 4em;
 }
 .footer-copyright {
     color: #666;
@@ -82,9 +154,16 @@ body {
 
 
 
-/* contact */ 
+
+/* Contact form */
+.contact-form {
+    width: 80%;
 
 }
+
+
+
+
 /* Media queries for mobile */
 
 @media (max-width: 575.98px) {

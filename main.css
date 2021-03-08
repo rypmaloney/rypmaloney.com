@@ -2,8 +2,24 @@ body {
     padding: 0;
     margin: 0;
     background: #f2f6e9;
+    position: relative;
     
 }
+
+.padding {
+    padding: 2em;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1.5em;
+}
+[class*="row"] {
+    padding-top: 2em;
+}
+
+
+
 .navbar {
     background: #465e72;
     padding-bottom: .5em;
@@ -43,7 +59,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: ;
 }
 
 .sub-header {
@@ -92,32 +108,44 @@ body {
 
 
 
-
-/* column styles */ 
-.features {
-    margin: 4em auto;
-    padding: 1em;
-    position: relative;
-}
-.feature-title {
-    color: #333;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.features img {
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 16px;
+/*scrollspy*/
+body,html {
+    height: 100%;
 }
 
-
-.card {
-    margin-top: 2em;
+#sidemenu {
+   margin-top: 2em;
+    
     
 }
+
+aside {
+    margin-left: 2em;
+    padding-left: 0em;
+    margin-top: 4em;
+}
+
+
+aside ul li {
+   margin-left: 0em;
+    padding-left: 0em; 
+    font-family: 'Poppins', sans-serif;
+    background:#;
+}
+
+
+
+
+  
+
+
+/* Homepage cards */
+.card {
+    box-shadow: 2px 2px 10px #000;
+    
+}
+       
+
 .card h4 {
     font-family: 'Poppins', sans-serif;
 }
@@ -133,11 +161,15 @@ body {
 }
 
 .list-card{
-     box-shadow: 1px 1px 10px #000;
+     
     
 }
 
+/* About */
 
+.about {
+     font-family: 'Poppins', sans-serif;
+}
 
 
 /*footer*/
@@ -161,6 +193,17 @@ body {
 
 }
 
+
+/* Webdev */
+
+.project h2 {
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps
+}
+
+.project p {
+    font-family: 'Poppins', sans-serif;
+}
 
 
 

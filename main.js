@@ -6,7 +6,3 @@ var ready = (callback) => {
 ready(() => {
     document.querySelector(".header").style.height = window.innerHeight + "px";
 })
-
-
-//scrollspy
-$('body').scrollspy({ target: '#navbar-example2' })
